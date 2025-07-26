@@ -185,6 +185,25 @@ User Types/Selects → Fragment → ViewModel → Repository → API Service (wi
 
 ## 🎬 App Screenshots
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/fb909c0e-21d4-47de-83c9-440bae8c1640" width="22%" />
+  <img src="https://github.com/user-attachments/assets/9705e3b4-1103-47dc-afc0-1293b198decc" width="22%" />
+  <img src="https://github.com/user-attachments/assets/1e641672-2f30-47a1-b673-e9bb64cd18cb" width="22%" />
+  <img src="https://github.com/user-attachments/assets/832b030c-26c9-415c-afef-71e7f7d7b075" width="22%" />
+  <img src="https://github.com/user-attachments/assets/b48b04ab-c945-4c87-89fd-b92635f49875" width="22%" />
+</div>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/1f79a193-a8c3-481e-9494-c457739d5180" width="22%" />
+
+
+<img src="https://github.com/user-attachments/assets/b64d95bc-8951-4192-b5d0-96a562926f0a" width="22%" />
+
+</div>
+
+
+
+
 ### 📱 Screen Captures
 
 <div align="center">
