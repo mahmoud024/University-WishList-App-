@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/universitiesFragment">
+
+    <fragment
+        android:id="@+id/universitiesFragment"
+        android:name="com.example.universitywishlistapp.ui.universities.UniversitiesFragment"
+        android:label="Universities" >
+
+        <!-- ✅ هذا هو السطر المهم -->
+        <action
+            android:id="@+id/action_universitiesFragment_to_universityDetailsFragment"
+            app:destination="@id/universityDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/universityDetailsFragment"
+        android:name="com.example.universitywishlistapp.ui.universitydetails.UniversityDetailsFragment"
+        android:label="Details" />
+
+    <fragment
+        android:id="@+id/wishlistFragment"
+        android:name="com.example.universitywishlistapp.ui.wishlist.WishlistFragment"
+        android:label="Wishlist" />
+</navigation>

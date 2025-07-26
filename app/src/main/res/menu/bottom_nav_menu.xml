@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/universitiesFragment"
+        android:icon="@drawable/uni"
+        android:title="Universities" />
+
+    <item
+        android:id="@+id/wishlistFragment"
+        android:icon="@drawable/love"
+        android:title="Wishlist" />
+</menu>

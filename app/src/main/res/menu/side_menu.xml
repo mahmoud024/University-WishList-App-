@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_uk"
+            android:title="🇬🇧 United Kingdom"
+            />
+
+        <item
+            android:id="@+id/menu_usa"
+            android:title="🇺🇸 United States"
+            />
+
+        <item
+            android:id="@+id/menu_canada"
+            android:title="🇨🇦 Canada"
+            />
+
+        <item
+            android:id="@+id/menu_germany"
+            android:title="🇩🇪 Germany" />
+
+    </group>
+</menu>
