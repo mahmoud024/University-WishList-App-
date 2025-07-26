@@ -288,86 +288,6 @@ cd university-wishlist-app
 
 ---
 
-## 📝 Code Implementation Details
-
-### Key Components:
-
-#### 1. University Data Model
-```kotlin
-data class University(
-    val name: String,
-    val country: String,
-    val web_pages: List<String>,
-    val domains: List<String>
-)
-```
-
-#### 2. Room Database Entity
-```kotlin
-@Entity(tableName = "favorite_universities")
-data class FavoriteUniversity(
-    @PrimaryKey val id: String,
-    val name: String,
-    val country: String,
-    val webPages: String,
-    val isChecked: Boolean = false
-)
-```
-
-#### 3. API Service Interface
-```kotlin
-interface UniversityApiService {
-    @GET("search")
-    suspend fun getUniversities(
-        @Query("country") country: String? = null
-    ): List<University>
-}
-```
-
-#### 4. Repository Pattern
-```kotlin
-class UniversityRepository(
-    private val apiService: UniversityApiService,
-    private val favoriteDao: FavoriteUniversityDao
-) {
-    suspend fun getUniversities(country: String? = null) = apiService.getUniversities(country)
-    
-    fun getAllFavorites() = favoriteDao.getAllFavorites()
-    
-    suspend fun addToFavorites(university: FavoriteUniversity) = favoriteDao.insert(university)
-    
-    suspend fun removeFromFavorites(university: FavoriteUniversity) = favoriteDao.delete(university)
-}
-```
-
-#### 5. ViewModel Implementation
-```kotlin
-class UniversityViewModel(private val repository: UniversityRepository) : ViewModel() {
-    
-    private val _universities = MutableLiveData<List<University>>()
-    val universities: LiveData<List<University>> = _universities
-    
-    private val _isLoading = MutableLiveData<Boolean>()
-    val isLoading: LiveData<Boolean> = _isLoading
-    
-    fun loadUniversities(country: String? = null) {
-        viewModelScope.launch {
-            _isLoading.value = true
-            try {
-                val result = repository.getUniversities(country)
-                _universities.value = result
-            } catch (e: Exception) {
-                // Handle error
-            } finally {
-                _isLoading.value = false
-            }
-        }
-    }
-}
-```
-
----
-
 ## 👨‍💻 Author
 
 **Mahmoud Atia**
@@ -401,10 +321,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 5. Open a Pull Request
 
 ---
-
-## 📞 Support
-
-If you have any questions or need help with the project, please open an issue on GitHub or contact me directly.
 
 ---
 
