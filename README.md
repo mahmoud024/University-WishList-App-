@@ -161,19 +161,6 @@ User Types/Selects → Fragment → ViewModel → Repository → API Service (wi
 - **Lifecycle Awareness**: ViewModels survive configuration changes
 - **Reactive UI**: LiveData ensures UI stays synchronized with data
 
----
-
-## 📋 Table of Contents
-
-- [Features](#-features)
-- [Technologies Used](#-technologies-used)
-- [System Architecture Flow](#-system-architecture-flow)
-- [App Screenshots](#-app-screenshots)
-- [Project Structure](#-project-structure)
-- [Setup and Installation](#-setup-and-installation)
-- [Required Permissions](#-required-permissions)
-- [Known Issues and Notes](#-known-issues-and-notes)
-- [Author](#-author)
 
 ---
 
