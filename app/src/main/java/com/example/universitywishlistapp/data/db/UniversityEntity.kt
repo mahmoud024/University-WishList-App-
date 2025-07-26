@@ -13,6 +13,6 @@ data class UniversityEntity(
     val country: String,
     val alpha_two_code: String,
     val isChecked: Boolean = false,
-    val isInWishlist: Boolean = false   // أضف هذا العمود الجديد
+    val isInWishlist: Boolean = false   
 
 )
